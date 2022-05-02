@@ -4,6 +4,7 @@ Solidity
 Solidity是一门为实现智能合约而创建的高级的，面向对象的编程语言。 智能合约是管理以太坊中账户行为的程序。
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Solidity是一种 `带花括号的语言 <https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages>`_.
 这门语言受到了 C++，Python 和 Javascript 语言的影响，设计的目的是能在以太坊虚拟机（EVM）上运行。
 你可以在:doc:`语言影响 <language-influences>` 这章找到更多的细节。
@@ -11,6 +12,10 @@ Solidity是一种 `带花括号的语言 <https://en.wikipedia.org/wiki/List_of_
 Solidity is a `curly-bracket language <https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages>`_ designed to target the Ethereum Virtual Machine (EVM).
 It is influenced by C++, Python and JavaScript. You can find more details about which languages Solidity has been inspired by in the :doc:`language influences <language-influences>` section.
 >>>>>>> d55b84ff63b1707f974f38c4d84088adb995b46a
+=======
+Solidity is a `curly-bracket language <https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages>`_ designed to target the Ethereum Virtual Machine (EVM).
+It is influenced by C++, Python and JavaScript. You can find more details about which languages Solidity has been inspired by in the :doc:`language influences <language-influences>` section.
+>>>>>>> 3e3e73e3805592700dd5501bff6d6e918c52071c
 
 Solidity 是静态类型语言，支持继承、库和复杂的用户定义类型等特性。
 
