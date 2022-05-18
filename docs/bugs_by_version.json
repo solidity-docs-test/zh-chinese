@@ -1598,32 +1598,21 @@
     },
     "0.8.11": {
         "bugs": [
-<<<<<<< HEAD
-=======
             "DataLocationChangeInInternalOverride",
             "NestedCallataArrayAbiReencodingSizeValidation",
->>>>>>> de7daaa2af87c9db7eadc975a7d08b165c1e27ba
             "AbiEncodeCallLiteralAsFixedBytesBug"
         ],
         "released": "2021-12-20"
     },
     "0.8.12": {
         "bugs": [
-<<<<<<< HEAD
-=======
             "DataLocationChangeInInternalOverride",
             "NestedCallataArrayAbiReencodingSizeValidation",
->>>>>>> de7daaa2af87c9db7eadc975a7d08b165c1e27ba
             "AbiEncodeCallLiteralAsFixedBytesBug"
         ],
         "released": "2022-02-16"
     },
     "0.8.13": {
-<<<<<<< HEAD
-        "bugs": [],
-        "released": "2022-03-16"
-    },
-=======
         "bugs": [
             "DataLocationChangeInInternalOverride",
             "NestedCallataArrayAbiReencodingSizeValidation"
@@ -1634,7 +1623,6 @@
         "bugs": [],
         "released": "2022-05-17"
     },
->>>>>>> de7daaa2af87c9db7eadc975a7d08b165c1e27ba
     "0.8.2": {
         "bugs": [
             "DataLocationChangeInInternalOverride",
