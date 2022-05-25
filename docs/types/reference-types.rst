@@ -313,9 +313,15 @@ Solidity没有字符串操作函数，但有第三方的字符串库。
     动态存储数组和 ``bytes`` （不是 ``string`` ）有一个叫 ``push(x)`` 的成员函数，
     您可以用它在数组的末端追加一个指定的元素。该函数不返回任何东西。
 **pop()**:
+<<<<<<< HEAD
     动态存储数组和 ``bytes`` （不是 ``string`` ）有一个叫 ``pop()`` 的成员函数，
     您可以用它来从数组的末端移除一个元素。这也隐含地在被删除的元素上调用 :ref:`delete <delete>`。
     该函数不返回任何内容。
+=======
+     Dynamic storage arrays and ``bytes`` (not ``string``) have a member
+     function called ``pop()`` that you can use to remove an element from the
+     end of the array. This also implicitly calls :ref:`delete<delete>` on the removed element. The function returns nothing.
+>>>>>>> 1543cfc90440e4cbbc4703e5b674b611fbed1118
 
 .. 注解::
     通过调用 ``push()`` 增加存储数组的长度有恒定的气体成本，因为存储是零初始化的，
@@ -462,21 +468,30 @@ Solidity没有字符串操作函数，但有第三方的字符串库。
         /// @dev 由代理管理的客户合约的地址，即本合约的地址
         address client;
 
-        constructor(address _client) {
-            client = _client;
+        constructor(address client_) {
+            client = client_;
         }
 
+<<<<<<< HEAD
         /// 转发对 "setOwner(address)" 的调用，
         /// 该调用在对地址参数进行基本验证后由客户端执行。
         function forward(bytes calldata _payload) external {
             bytes4 sig = bytes4(_payload[:4]);
             // 由于截断行为，bytes4(_payload)的表现是相同的。
             // bytes4 sig = bytes4(_payload);
+=======
+        /// Forward call to "setOwner(address)" that is implemented by client
+        /// after doing basic validation on the address argument.
+        function forward(bytes calldata payload) external {
+            bytes4 sig = bytes4(payload[:4]);
+            // Due to truncating behaviour, bytes4(payload) performs identically.
+            // bytes4 sig = bytes4(payload);
+>>>>>>> 1543cfc90440e4cbbc4703e5b674b611fbed1118
             if (sig == bytes4(keccak256("setOwner(address)"))) {
-                address owner = abi.decode(_payload[4:], (address));
+                address owner = abi.decode(payload[4:], (address));
                 require(owner != address(0), "Address of owner cannot be zero.");
             }
-            (bool status,) = client.delegatecall(_payload);
+            (bool status,) = client.delegatecall(payload);
             require(status, "Forwarded call failed.");
         }
     }
