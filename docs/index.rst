@@ -1,7 +1,42 @@
 Solidity
 ========
 
+<<<<<<< HEAD
 Solidity是一门为实现智能合约而创建的高级的，面向对象的编程语言。 智能合约是管理以太坊中账户行为的程序。
+=======
+Solidity is an object-oriented, high-level language for implementing smart
+contracts. Smart contracts are programs which govern the behaviour of accounts
+within the Ethereum state.
+
+Solidity is a `curly-bracket language <https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages>`_ designed to target the Ethereum Virtual Machine (EVM).
+It is influenced by C++, Python and JavaScript. You can find more details about which languages Solidity has been inspired by in the :doc:`language influences <language-influences>` section.
+
+Solidity is statically typed, supports inheritance, libraries and complex
+user-defined types among other features.
+
+With Solidity you can create contracts for uses such as voting, crowdfunding, blind auctions,
+and multi-signature wallets.
+
+When deploying contracts, you should use the latest released
+version of Solidity. Apart from exceptional cases, only the latest version receives
+`security fixes <https://github.com/ethereum/solidity/security/policy#supported-versions>`_.
+Furthermore, breaking changes as well as
+new features are introduced regularly. We currently use
+a 0.y.z version number `to indicate this fast pace of change <https://semver.org/#spec-item-4>`_.
+
+.. warning::
+
+  Solidity recently released the 0.8.x version that introduced a lot of breaking
+  changes. Make sure you read :doc:`the full list <080-breaking-changes>`.
+
+Ideas for improving Solidity or this documentation are always welcome,
+read our :doc:`contributors guide <contributing>` for more details.
+
+.. Hint::
+
+  You can download this documentation as PDF, HTML or Epub by clicking on the versions
+  flyout menu in the bottom-left corner and selecting the preferred download format.
+>>>>>>> fdc3c8eedeae7327f772c368582e25fc6a5add5c
 
 
 Solidity是一种 `带花括号的语言 <https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages>`_.
